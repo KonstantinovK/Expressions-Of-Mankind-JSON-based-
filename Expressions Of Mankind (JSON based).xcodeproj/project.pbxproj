@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		FA5798AB2800387F00D9B0C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5798A92800387F00D9B0C2 /* Main.storyboard */; };
 		FA5798AD2800388200D9B0C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA5798AC2800388200D9B0C2 /* Assets.xcassets */; };
 		FA5798B02800388200D9B0C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5798AE2800388200D9B0C2 /* LaunchScreen.storyboard */; };
+		FA5798BA28003F9700D9B0C2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5798B928003F9700D9B0C2 /* NetworkManager.swift */; };
+		FA5798BD2801B19D00D9B0C2 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5798BC2801B19D00D9B0C2 /* Expression.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		FA5798AC2800388200D9B0C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA5798AF2800388200D9B0C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA5798B12800388200D9B0C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA5798B928003F9700D9B0C2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FA5798BC2801B19D00D9B0C2 /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				FA5798A32800387F00D9B0C2 /* AppDelegate.swift */,
 				FA5798A52800387F00D9B0C2 /* SceneDelegate.swift */,
+				FA5798B928003F9700D9B0C2 /* NetworkManager.swift */,
 				FA5798A72800387F00D9B0C2 /* ViewController.swift */,
+				FA5798BC2801B19D00D9B0C2 /* Expression.swift */,
 				FA5798A92800387F00D9B0C2 /* Main.storyboard */,
 				FA5798AC2800388200D9B0C2 /* Assets.xcassets */,
 				FA5798AE2800388200D9B0C2 /* LaunchScreen.storyboard */,
@@ -102,7 +108,7 @@
 				};
 			};
 			buildConfigurationList = FA57989B2800387F00D9B0C2 /* Build configuration list for PBXProject "Expressions Of Mankind (JSON based)" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -137,9 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5798BA28003F9700D9B0C2 /* NetworkManager.swift in Sources */,
 				FA5798A82800387F00D9B0C2 /* ViewController.swift in Sources */,
 				FA5798A42800387F00D9B0C2 /* AppDelegate.swift in Sources */,
 				FA5798A62800387F00D9B0C2 /* SceneDelegate.swift in Sources */,
+				FA5798BD2801B19D00D9B0C2 /* Expression.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

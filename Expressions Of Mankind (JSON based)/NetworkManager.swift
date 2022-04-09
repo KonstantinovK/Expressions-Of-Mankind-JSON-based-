@@ -1,19 +1,19 @@
 //
-//  ViewController.swift
+//  NetworkManager.swift
 //  Expressions Of Mankind (JSON based)
 //
 //  Created by MacBook on 08.04.2022.
 //
 
+import Foundation
 import UIKit
 
-class ViewController: UIViewController {
-    
-    @IBOutlet var lableForExpression: UILabel!
-    
-    var urlAddress = "https://api.fisenko.net/v1/quotes/en/random"
+/*
 
+class NetworkManager: UIViewController {
     //MARK: -Private methods
+    
+     var label: String = ""
     
     private func successAlert() {
         DispatchQueue.main.async {
@@ -40,10 +40,9 @@ class ViewController: UIViewController {
             self.present(alert, animated: true)
         }
     }
-    
     // MARK: -Networking (JSON)
-    func fetchExpression(){
-        guard let url = URL(string: urlAddress) else { return }
+      func fetchExpression(){
+        guard let url = URL(string: "https://api.fisenko.net/v1/quotes/en/random") else { return }
         URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data else {
                 print(error?.localizedDescription ?? "No error description")
@@ -55,30 +54,16 @@ class ViewController: UIViewController {
                 print(expression.author.name)
                 
                 DispatchQueue.main.async {
-                    self.lableForExpression.text = """
+                    self.label = """
                     \(expression.text)
                   - \(expression.author.name)
                 """
                 }
             } catch let error {
-                self.failedAlert()
+                //self.failedAlert()
                 print(error.localizedDescription)
             }
         }.resume()
     }
-    
-    //MARK: -IBActions
-    
-    @IBAction func fetchExpressionButton(_ sender: Any) {
-        fetchExpression()
-    }
-    
-    @IBAction func languageSwitchAction(_ sender: UISwitch) {
-        if sender.isOn {
-            urlAddress = "https://api.fisenko.net/v1/quotes/en/random"
-        } else {
-            urlAddress = "https://api.fisenko.net/v1/quotes/ru/random"
-        }
-    }
 }
-
+*/
